@@ -1,1 +1,14 @@
 *.txt.user
+
+build/
+log/
+debian/tmp/
+debian/nlink-parser-ros2/
+debian/files
+debian/*.substvars
+debian/debhelper-build-stamp
+debian/.debhelper/
+*.deb
+*.changes
+*.buildinfo
+obj-*/

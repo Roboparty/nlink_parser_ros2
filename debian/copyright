@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: nlink_parser_ros2
+Source: https://github.com/Roboparty/nlink_parser_ros2
+
+Files: *
+Copyright: 2021 Nooploop / Hopetechnik
+License: BSD-3-Clause

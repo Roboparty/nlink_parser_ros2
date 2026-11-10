@@ -1,0 +1,25 @@
+Source: nlink-parser-ros2
+Section: misc
+Priority: optional
+Maintainer: wentywenty <2321901849@qq.com>
+Build-Depends: debhelper-compat (= 13), cmake,
+               python3-colcon-common-extensions, libyaml-cpp-dev,
+               ros-jazzy-ament-cmake, ros-jazzy-rclcpp,
+               ros-jazzy-std-msgs, ros-jazzy-geometry-msgs,
+               ros-jazzy-rosidl-default-generators,
+               ros-jazzy-rosidl-default-runtime,
+               ros-jazzy-serial
+Standards-Version: 4.6.0
+
+Package: nlink-parser-ros2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         ros-jazzy-rclcpp, ros-jazzy-std-msgs,
+         ros-jazzy-geometry-msgs, ros-jazzy-rosidl-default-runtime,
+         ros-jazzy-serial
+Description: Nooploop NLink parser for ROS 2 (LinkTrack / LinkTrack AoA)
+ ROS 2 port of the Nooploop nlink_parser, providing linktrack,
+ linktrack_aoa and visualization nodes plus custom message interfaces.
+ Depends on the standalone ros-jazzy-serial package and installs under
+ the configured install prefix (default /opt/roboparty) for the RoboParty
+ UWB positioning integration.
