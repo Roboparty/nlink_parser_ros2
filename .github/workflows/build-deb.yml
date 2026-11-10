@@ -72,6 +72,7 @@ jobs:
 
       - name: Build and install ros-jazzy-serial
         run: |
+          rm -rf /tmp/ros-jazzy-serial
           git clone --depth 1 https://github.com/Roboparty/serial.git /tmp/ros-jazzy-serial
           cd /tmp/ros-jazzy-serial
           dpkg-buildpackage -us -uc -b
